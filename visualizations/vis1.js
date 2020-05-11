@@ -59,9 +59,9 @@ const no =filln.map(d=>  d.recipients.map(e=> e.amount) )
 
 // SVG Layout
 
-const margin = {top: 10, right: 30, bottom: 20, left: 40};
+const margin = {top: 10, right: 30, bottom: 10, left: 40};
 width = 500;
-height = 400;
+height = 700;
 const visWidth = width - margin.left - margin.right;
 const visHeight = height - margin.top - margin.bottom;
 
@@ -83,7 +83,7 @@ g.append("text")
 .text("Overview of aids provided");
 
 // add legend
-const maxRadius = 6;
+const maxRadius = 8;
 const radius = d3.scaleSqrt()
               .domain(d3.extent(donationRange))
               .range([1, maxRadius]);
